@@ -12,7 +12,7 @@ export const ModalPopup = () => {
   return (
     <div className='modal-popup-container'>
       <button onClick={handleClickShowPopup}>Open Popup</button>
-      {shopPopup && <Popup />}
+      {shopPopup && <Popup body={<div>Customised Body</div>} />}
     </div>
   );
 };
