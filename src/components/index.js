@@ -1,1 +1,1 @@
-export { Popup } from './modal-popup';
+export { ModalPopup } from './modal-popup';

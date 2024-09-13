@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { Popup } from './components';
+import { ModalPopup } from './components';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Popup />
+      <ModalPopup />
     </div>
   );
 }
