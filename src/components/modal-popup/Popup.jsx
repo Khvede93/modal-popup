@@ -1,11 +1,13 @@
 import React from 'react';
 
-export const Popup = ({ id, header, body, footer }) => {
+export const Popup = ({ id, header, body, footer, handleHide }) => {
   return (
     <div id={id || 'Popup'} className='popup-container'>
       <div className='content'>
         <div className='header'>
-          <span className='close-popup-icon'>&times;</span>
+          <span className='close-popup-icon' onClick={handleHide}>
+            &times;
+          </span>
           <h2>{header ? header : 'Default Header'}</h2>
         </div>
         <div className='body'>

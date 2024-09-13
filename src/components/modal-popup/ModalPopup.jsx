@@ -9,10 +9,19 @@ export const ModalPopup = () => {
     setShowPopup(true);
   }
 
+  function handleClickHidePopup() {
+    setShowPopup(false);
+  }
+
   return (
     <div className='modal-popup-container'>
       <button onClick={handleClickShowPopup}>Open Popup</button>
-      {shopPopup && <Popup body={<div>Customised Body</div>} />}
+      {shopPopup && (
+        <Popup
+          body={<div>Customised Body</div>}
+          handleHide={handleClickHidePopup}
+        />
+      )}
     </div>
   );
 };

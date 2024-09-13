@@ -5,3 +5,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+.popup-container {
+  position: fixed;
+  z-index: 1;
+  padding-top: 15rem;
+  left: 0;
+  top: 0;
+  background-color: #4d9e25;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  border: 1px solid red;
+  width: 80%;
+}
