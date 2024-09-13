@@ -24,27 +24,32 @@
   margin: auto;
   border: 1px solid red;
   width: 80%;
+  color: white;
+  text-align: center;
 }
 
 .header {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 2.5rem;
   background-color: #96e071;
-  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  align-items: center;
 }
 
 .close-popup-icon {
   cursor: pointer;
   font-size: 4rem;
-  float: right;
   font-weight: bold;
+  width: min-content;
 }
 
 .body {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 2.5rem;
   height: 20rem;
+  color: #000;
 }
 
 .footer {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 2.5rem;
   background-color: #96e071;
 }

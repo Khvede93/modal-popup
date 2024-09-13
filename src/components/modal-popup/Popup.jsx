@@ -5,10 +5,10 @@ export const Popup = ({ id, header, body, footer, handleHide }) => {
     <div id={id || 'Popup'} className='popup-container'>
       <div className='content'>
         <div className='header'>
+          <h2>{header ? header : 'Default Header'}</h2>
           <span className='close-popup-icon' onClick={handleHide}>
             &times;
           </span>
-          <h2>{header ? header : 'Default Header'}</h2>
         </div>
         <div className='body'>
           {body ? body : <div>Default Body Content</div>}
