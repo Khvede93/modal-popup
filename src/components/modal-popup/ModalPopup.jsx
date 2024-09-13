@@ -6,7 +6,7 @@ export const ModalPopup = () => {
   const [shopPopup, setShowPopup] = useState(false);
 
   function handleClickShowPopup() {
-    setShowPopup(!shopPopup);
+    setShowPopup(true);
   }
 
   return (
